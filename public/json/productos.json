@@ -1,0 +1,85 @@
+[
+    {
+        "id": 1,
+        "idCategoria": 1,
+        "nombre": "Pc Gamer Base",
+        "caracteristicas": "i3, 16gb de ram, rx 550, 500w, 240 ssd",
+        "precio": 50000,
+        "stock": 20,
+        "img": "pcGamer1.jpg"
+    },
+    {
+        "id": 2,
+        "idCategoria": 1,
+        "nombre": "Pc Gamer Media",
+        "caracteristicas": "i5, 16gb de ram, rtx 3050, 650w, 1tb hdd, 240gb ssd",
+        "precio": 100000,
+        "stock": 10,
+        "img": "pcGamer2.jpg"
+    },
+    {
+        "id": 3,
+        "idCategoria": 1,
+        "nombre": "Pc Gamer Alta",
+        "caracteristicas": "i7, 16gb de ram, rx 6650, 850w, 1tb ssd",
+        "precio": 200000,
+        "stock": 5,
+        "img": "pcGamer3.jpg"
+    },
+    {
+        "id": 4,
+        "idCategoria": 2,
+        "nombre": "Pc Edicion Base",
+        "caracteristicas": "i5, 16gb de ram, rx 580, 600w, 480 ssd",
+        "precio": 100000,
+        "stock": 15,
+        "img": "pcEdicion1.png"
+    },
+    {
+        "id": 5,
+        "idCategoria": 2,
+        "nombre": "Pc Edicion Media",
+        "caracteristicas": "i7, 32gb de ram, rtx 3070, 750w, 1tb hdd, 480gb ssd",
+        "precio": 150000,
+        "stock": 10,
+        "img": "pcEdicion2.png"
+    },
+    {
+        "id": 6,
+        "idCategoria": 2,
+        "nombre": "Pc Edicion Alta",
+        "caracteristicas": "i9, 64gb de ram, rtx 3080, 850w, 1tb ssd",
+        "precio": 250000,
+        "stock": 5,
+        "img": "pcEdicion3.png"
+    },
+    {
+        "id": 7,
+        "idCategoria": 3,
+        "nombre": "Pc Streaming Base",
+        "caracteristicas": "i5, 16gb de ram, rx 580, 600w, 240 ssd",
+        "precio": 50000,
+        "stock": 15,
+        "img": "pcStreaming1.jpg"
+    },
+    {
+        "id": 8,
+        "idCategoria": 3,
+        "nombre": "Pc Streaming Media",
+        "caracteristicas": "i7, 16gb de ram, rtx 3060, 650w, 1tb hdd, 240gb ssd",
+        "precio": 100000,
+        "stock": 10,
+        "img": "pcStreaming2.jpg"
+    },
+    {
+        "id": 9,
+        "idCategoria": 3,
+        "nombre": "Pc Streaming Alta",
+        "caracteristicas": "i9, 32gb de ram, rtx 3080ti, 850w, 1tb ssd",
+        "precio": 200000,
+        "stock": 5,
+        "img": "pcStreaming3.jpg"
+    }
+    
+
+]
