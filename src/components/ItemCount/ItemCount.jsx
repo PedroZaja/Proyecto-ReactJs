@@ -2,10 +2,7 @@ import {useState} from 'react';
 
 const ItemCount = ({stock}) => {
     const [contador, setContador] = useState(1);
-    /*
-    const boton = document.getElementById("boton1")
-    console.log(boton) NO SE PUEDE*/
-                            //1
+    
     const sumar = () => contador < stock && setContador(contador + 1)
 
     const restar = () => contador > 1 && setContador(contador - 1)
