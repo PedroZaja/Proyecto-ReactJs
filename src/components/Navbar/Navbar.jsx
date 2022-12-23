@@ -1,11 +1,13 @@
 import CartWidget from '../CartWidget/CartWidget';
-import { Link } from 'react-router-dom';
-import Categorias from './Categorias/Categorias'
+import Categorias from './Categorias/Categorias';
+import BotonDarkMode from './BotonDarkMode/BotonDarkMode';
+import { useDarkModeContext } from '../../Context/DarkModeContext';
 
 const Navbar = () => {
+  const {DarkMode} = useDarkModeContext();
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-light">
+      <nav className={`navbar navbar-expand-lg navbar-dark ${DarkMode ? 'bg-primary' : 'bg-dark'}`}>
         <div className="container-fluid">
           <img src="../img/z-t.png" alt="logo" width="50" />
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,6 +17,7 @@ const Navbar = () => {
             
             <Categorias/>
             <CartWidget />
+            <BotonDarkMode/>
 
           </div>
         </div>

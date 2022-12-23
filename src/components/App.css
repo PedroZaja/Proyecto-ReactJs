@@ -46,3 +46,7 @@ img {
     text-align: center;
     margin: 20px;
 }
+
+.imgPc{
+    min-height: 300px;
+}
