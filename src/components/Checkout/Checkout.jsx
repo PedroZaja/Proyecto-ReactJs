@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { createOrdenCompra, getOrdenCompra, getProducto, updateProducto } from '../../assets/FireBase';
 import { useCarritoContext } from '../../Context/CarritoContext';
-import { toast } from 'react-toastify/dist/components';
+import { toast } from 'react-toastify';
 
 const Checkout = () => {
 
@@ -18,7 +18,7 @@ const Checkout = () => {
         const aux = [...carrito]
 
         aux.forEach(prodCarrito => {
-            getProducto(prodCarrito.id).then(prod => {
+            getProducto(prodCarrito.id).then(prodBDD => {
                 if (prodBDD.stock >= prodCarrito.cant) {
                     prodBDD.stock -= prodCarrito.cant
                     updateProducto(prodCarrito.id, prodBDD)
