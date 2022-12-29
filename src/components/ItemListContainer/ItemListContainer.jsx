@@ -15,6 +15,8 @@ const ItemListContainer = () => {
                 const productsList = products.filter(prod => prod.stock > 0).filter
             })
         }
+
+        //cargarBDD().then()
         
     },[category]);
     

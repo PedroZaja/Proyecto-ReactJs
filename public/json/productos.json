@@ -6,7 +6,7 @@
         "caracteristicas": "i3, 16gb de ram, rx 550, 500w, 240 ssd",
         "precio": 50000,
         "stock": 20,
-        "img": "pcGamer1.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/zaja-store-8a383.appspot.com/o/pcGamer1.jpg?alt=media&token=43bb153e-f69a-4a5e-a498-351e81a9a11c"
     },
     {
         "id": 2,
@@ -15,7 +15,7 @@
         "caracteristicas": "i5, 16gb de ram, rtx 3050, 650w, 1tb hdd, 240gb ssd",
         "precio": 100000,
         "stock": 10,
-        "img": "pcGamer2.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/zaja-store-8a383.appspot.com/o/pcGamer2.jpg?alt=media&token=a162a04c-81a2-4f0f-a9f4-7e494e0008af"
     },
     {
         "id": 3,
@@ -24,7 +24,7 @@
         "caracteristicas": "i7, 16gb de ram, rx 6650, 850w, 1tb ssd",
         "precio": 200000,
         "stock": 5,
-        "img": "pcGamer3.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/zaja-store-8a383.appspot.com/o/pcGamer3.jpg?alt=media&token=d8f6d679-7939-4916-9a25-e597c180ceb7"
     },
     {
         "id": 4,
@@ -33,7 +33,7 @@
         "caracteristicas": "i5, 16gb de ram, rx 580, 600w, 480 ssd",
         "precio": 100000,
         "stock": 15,
-        "img": "pcEdicion1.png"
+        "img": "https://firebasestorage.googleapis.com/v0/b/zaja-store-8a383.appspot.com/o/pcEdicion1.png?alt=media&token=c1a6f4d0-e082-4fc6-a18b-76d439e23193"
     },
     {
         "id": 5,
@@ -42,7 +42,7 @@
         "caracteristicas": "i7, 32gb de ram, rtx 3070, 750w, 1tb hdd, 480gb ssd",
         "precio": 150000,
         "stock": 10,
-        "img": "pcEdicion2.png"
+        "img": "https://firebasestorage.googleapis.com/v0/b/zaja-store-8a383.appspot.com/o/pcEdicion2.png?alt=media&token=603eed16-9a9e-4451-8a61-345ccb1c9eb3"
     },
     {
         "id": 6,
@@ -51,7 +51,7 @@
         "caracteristicas": "i9, 64gb de ram, rtx 3080, 850w, 1tb ssd",
         "precio": 250000,
         "stock": 5,
-        "img": "pcEdicion3.png"
+        "img": "https://firebasestorage.googleapis.com/v0/b/zaja-store-8a383.appspot.com/o/pcEdicion3.png?alt=media&token=a29753a8-b28c-41ae-93c3-a67e55fbdbd5"
     },
     {
         "id": 7,
@@ -60,7 +60,7 @@
         "caracteristicas": "i5, 16gb de ram, rx 580, 600w, 240 ssd",
         "precio": 50000,
         "stock": 15,
-        "img": "pcStreaming1.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/zaja-store-8a383.appspot.com/o/pcStreaming1.jpg?alt=media&token=65a32e8a-9922-4504-b5a0-557c35bf8df9"
     },
     {
         "id": 8,
@@ -69,7 +69,7 @@
         "caracteristicas": "i7, 16gb de ram, rtx 3060, 650w, 1tb hdd, 240gb ssd",
         "precio": 100000,
         "stock": 10,
-        "img": "pcStreaming2.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/zaja-store-8a383.appspot.com/o/pcStreaming2.jpg?alt=media&token=2217e33f-2eaf-4385-bd3b-deccaf79fd7b"
     },
     {
         "id": 9,
@@ -78,7 +78,7 @@
         "caracteristicas": "i9, 32gb de ram, rtx 3080ti, 850w, 1tb ssd",
         "precio": 200000,
         "stock": 5,
-        "img": "pcStreaming3.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/zaja-store-8a383.appspot.com/o/pcStreaming3.jpg?alt=media&token=6153b20e-371c-4ae8-8ebc-f5c00c277f42"
     }
     
 
