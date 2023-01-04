@@ -50,3 +50,13 @@ img {
 .imgPc{
     min-height: 300px;
 }
+
+.carrito{
+    text-decoration: overline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+

@@ -28,15 +28,20 @@ const Checkout = () => {
             })
         })
 
-        createOrdenCompra(cliente, totalPrice(), new Date().toISOString().slice(0, 10).then(ordenCompra => {
+        createOrdenCompra(cliente,totalPrice(), new Date().toISOString()).then(ordenCompra => {
             getOrdenCompra(ordenCompra.id).then(item => {
-                toast.success(`Muchas gracias por elegirnos :) Su orden es ${item.id}`)
+                toast.success(`¡Muchas gracias por su compra, su orden es ${item.id}`)
                 emptyCart()
                 e.target.reset()
                 navigate("/")
+            }).catch(error => {
+                toast.error("Su orden no fue generada con exito")
+                console.error(error)
             })
+            
+        })
 
-        }))
+        
 
     }
 

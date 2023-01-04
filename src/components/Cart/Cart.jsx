@@ -9,13 +9,13 @@ const Cart = () => {
         <>
             {carrito.length === 0 ? 
             <>
-                <h1>Carrito vacio</h1>
-                <button className={`btn ${DarkMode ? 'btn-secondary' : 'btn-primary'}`}><Link  className="nav-link" to={'/'}>Continuar comprando</Link></button>
+                <h1 className="carrito">Carrito vacio</h1>
+                <button className={`btn  btnCarrito ${DarkMode ?  'btn-primary' : 'btn-secondary'}`}><Link  className="nav-link" to={'/'}>Continuar comprando</Link></button>
             </>
             :
             <div className="container cartContainer">
                 {
-                    carrito.map(prod => 
+                    carrito.map((prod) => 
                         <div className="card mb-3" key={prod.id} style={{maxWidth: '540px'}}>
                             <div className="row g-0">
                                 <div className="col-md-4">
@@ -24,7 +24,7 @@ const Cart = () => {
                             </div>
                             <div className="col-md-8">
                                 <div className="cardBody">
-                                    <h5 className="card-title"> {`${prod.nombre} ${prod.marca}`}</h5>
+                                    <h5 className="card-title"> {`${prod.nombre}`}</h5>
                                     <p className="card-text">Cantidad: {prod.cant}</p>
                                     <p className="card-text">Precio unitario: {new Intl.NumberFormat('de-De').format(prod.precio)}</p>
                                     <p className="card-text">Precio total: {new Intl.NumberFormat('de-De').format(prod.precio * prod.cant)}</p>
