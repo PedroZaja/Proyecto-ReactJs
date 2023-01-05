@@ -7,7 +7,7 @@ const Navbar = () => {
   const {DarkMode} = useDarkModeContext();
   return (
     <div>
-      <nav className={`navbar navbar-expand-lg navbar-dark ${DarkMode ? 'bg-primary' : 'bg-dark'}`}>
+      <nav className={`navbar navbar-expand-lg ${DarkMode ? 'bg-dark' : 'NavClaro'}`}>
         <div className="container-fluid">
           <img src="../img/z-t.png" alt="logo" width="50" />
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

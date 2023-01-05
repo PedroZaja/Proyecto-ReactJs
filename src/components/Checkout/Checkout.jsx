@@ -23,14 +23,15 @@ const Checkout = () => {
                     prodBDD.stock -= prodCarrito.cant
                     updateProducto(prodCarrito.id, prodBDD)
                 } else {
-                   
+                   toast.error(`El producto ${prodBDD.nombre} no posee stock`)
+                   emptyCart()
                 }
             })
         })
 
         createOrdenCompra(cliente,totalPrice(), new Date().toISOString()).then(ordenCompra => {
             getOrdenCompra(ordenCompra.id).then(item => {
-                toast.success(`¡Muchas gracias por su compra, su orden es ${item.id}`)
+                toast.success(`¡Muchas gracias por su compra! Su orden es ${item.id}`)
                 emptyCart()
                 e.target.reset()
                 navigate("/")
@@ -46,29 +47,37 @@ const Checkout = () => {
     }
 
     return (
-        <div className="container" style={{ marginTop: "20px" }}>
+        <div className="container col-5" style={{ marginTop: "20px" }}>
             <form onSubmit={consultarFormulario} ref={datosFormulario}>
                 <div className="mb-3">
-                    <label htmlFor="nombre" className="form-label">Nombre y Apellido</label>
-                    <input type="text" className="form-control" name="nombre" />
+                    <label htmlFor="nombre" className="form-label"></label>
+                    <input type="text" className="form-control" name="nombre" placeholder='Nombre y Apellido' required/>
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="email" className="form-label">Email</label>
-                    <input type="email" className="form-control" name="email" />
+                    <label htmlFor="email" className="form-label"></label>
+                    <input type="email" className="form-control" name="email" placeholder='Email' required/>
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="dni" className="form-label">DNI</label>
-                    <input type="number" className="form-control" name="dni" />
+                    <label htmlFor="email" className="form-label"></label>
+                    <input type="email" className="form-control" name="email" placeholder='Confirme su Email' required/>
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="celular" className="form-label">Numero telefonico</label>
-                    <input type="number" className="form-control" name="celular" />
+                    <label htmlFor="dni" className="form-label"></label>
+                    <input type="number" className="form-control" name="dni" placeholder='DNI' required/>
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="direccion" className="form-label">Dirección</label>
-                    <input type="text" className="form-control" name="direccion" />
+                    <label htmlFor="celular" className="form-label"></label>
+                    <input type="number" className="form-control" name="celular" placeholder='Numero de contacto' required/>
                 </div>
-                <button type="submit" className="btn btn-primary">Finalizar Compra</button>
+                <div className="mb-3">
+                    <label htmlFor="direccion" className="form-label"></label>
+                    <input type="text" className="form-control" name="direccion" placeholder='Direccion de envio' required/>
+                </div>
+                <div className="mb-3">
+                    <label htmlFor="direccion" className="form-label"></label>
+                    <input type="text" className="form-control" name="direccion" placeholder='Codigo Postal' required/>
+                </div>
+                <button type="submit" className="container col-3 btn btn-secondary">Finalizar Compra</button>
             </form>
 
         </div>

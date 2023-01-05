@@ -52,11 +52,38 @@ img {
 }
 
 .carrito{
-    text-decoration: overline;
+    margin: 10px;
+    text-decoration:underline;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 
+.btnVerProdObs{
+    background-color: rgb(0, 28, 55);
+}
 
+.btnVerPrdoClaro{
+    background-color: rgb(35, 101, 133);
+}
+
+.NavClaro{
+    background-color: rgb(35, 101, 133);
+}
+
+.carritoClaro{
+    background-color: rgb(99, 190, 229);
+}
+
+.CardObs{
+    background-color: rgb(28, 50, 110);;
+}
+
+.VaciarCarritoObs{
+    background-color: brown;
+}
+
+.VaciarCarritoClaro{
+    background-color: rgb(242, 60, 60);
+}
