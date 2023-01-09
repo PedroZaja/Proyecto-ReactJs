@@ -15,6 +15,7 @@ const Checkout = () => {
         const datForm = new FormData(datosFormulario.current)
         const cliente = Object.fromEntries(datForm)
 
+
         const aux = [...carrito]
 
         aux.forEach(prodCarrito => {
@@ -23,25 +24,26 @@ const Checkout = () => {
                     prodBDD.stock -= prodCarrito.cant
                     updateProducto(prodCarrito.id, prodBDD)
                 } else {
-                   toast.error(`El producto ${prodBDD.nombre} no posee stock`)
-                   emptyCart()
+                    toast.error(`El producto ${prodBDD.nombre} no posee stock`)
+                    emptyCart()
                 }
             })
         })
 
-        createOrdenCompra(cliente,totalPrice(), new Date().toISOString()).then(ordenCompra => {
+        createOrdenCompra(cliente, totalPrice(), new Date().toISOString()).then(ordenCompra => {
             getOrdenCompra(ordenCompra.id).then(item => {
                 toast.success(`¡Muchas gracias por su compra! Su orden es ${item.id}`)
                 emptyCart()
                 e.target.reset()
                 navigate("/")
+                console.log(cliente)
             }).catch(error => {
                 toast.error("Su orden no fue generada con exito")
                 console.error(error)
             })
             
-        })
 
+        })
         
 
     }
@@ -51,31 +53,31 @@ const Checkout = () => {
             <form onSubmit={consultarFormulario} ref={datosFormulario}>
                 <div className="mb-3">
                     <label htmlFor="nombre" className="form-label"></label>
-                    <input type="text" className="form-control" name="nombre" placeholder='Nombre y Apellido' required/>
+                    <input type="text" className="form-control" name="nombre" placeholder='Nombre y Apellido' required />
                 </div>
                 <div className="mb-3">
                     <label htmlFor="email" className="form-label"></label>
-                    <input type="email" className="form-control" name="email" placeholder='Email' required/>
+                    <input type="email" className="form-control" name="email" placeholder='Email' required />
                 </div>
                 <div className="mb-3">
                     <label htmlFor="email" className="form-label"></label>
-                    <input type="email" className="form-control" name="email" placeholder='Confirme su Email' required/>
+                    <input type="email" className="form-control" name="repetiremail" placeholder='Confirme su Email' required />
                 </div>
                 <div className="mb-3">
                     <label htmlFor="dni" className="form-label"></label>
-                    <input type="number" className="form-control" name="dni" placeholder='DNI' required/>
+                    <input type="number" className="form-control" name="dni" placeholder='DNI' required />
                 </div>
                 <div className="mb-3">
                     <label htmlFor="celular" className="form-label"></label>
-                    <input type="number" className="form-control" name="celular" placeholder='Numero de contacto' required/>
+                    <input type="number" className="form-control" name="celular" placeholder='Numero de contacto' required />
                 </div>
                 <div className="mb-3">
                     <label htmlFor="direccion" className="form-label"></label>
-                    <input type="text" className="form-control" name="direccion" placeholder='Direccion de envio' required/>
+                    <input type="text" className="form-control" name="direccion" placeholder='Direccion de envio' required />
                 </div>
                 <div className="mb-3">
                     <label htmlFor="direccion" className="form-label"></label>
-                    <input type="text" className="form-control" name="direccion" placeholder='Codigo Postal' required/>
+                    <input type="text" className="form-control" name="direccion" placeholder='Codigo Postal' required />
                 </div>
                 <button type="submit" className="container col-3 btn btn-secondary">Finalizar Compra</button>
             </form>
