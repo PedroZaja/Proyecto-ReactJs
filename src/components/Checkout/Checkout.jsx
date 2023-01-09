@@ -31,17 +31,19 @@ const Checkout = () => {
         })
 
         createOrdenCompra(cliente, totalPrice(), new Date().toISOString()).then(ordenCompra => {
+            if (cliente.email === cliente.repetiremail){
             getOrdenCompra(ordenCompra.id).then(item => {
                 toast.success(`¡Muchas gracias por su compra! Su orden es ${item.id}`)
                 emptyCart()
                 e.target.reset()
                 navigate("/")
-                console.log(cliente)
             }).catch(error => {
                 toast.error("Su orden no fue generada con exito")
                 console.error(error)
             })
-            
+            }else{
+                toast.error("Su Email no coincide!")
+            }
 
         })
         
